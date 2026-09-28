@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ClassSafe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <h2>ClassSafe</h2>
+            <input id="attended" type="number" placeholder="Classes Attended">
+            <input id="conducted" type="number" placeholder="Classes Conducted">
+            <input id="target" type="number" value="75" placeholder="Target %">
+            <br>
+            <button onclick="calculate()">Calculate</button>
+            <button onclick="clearAll()">Clear</button>
+            <div id="result"></div>
+        </div>
+        <hr>
+        <h3>What If I Miss?</h3>
+        <input id="miss" type="number" placeholder="Classes to miss">
+        <button onclick="checkMiss()">Check</button>
+        <div id="missResult"></div>
+        <hr>
+        <h3>What If I Attend?</h3>
+        <input id="attendMore" type="number" placeholder="Classes to attend">
+        <button onclick="checkAttend()">Check</button>
+        <div id="attendResult"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
